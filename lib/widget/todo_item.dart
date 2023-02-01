@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todoapplication/constants/color.dart';
+import 'package:todoapplication/constants/ColorUtility.dart';
 
 import '../model/todo.dart';
 
@@ -7,11 +7,7 @@ class ToDoItem extends StatelessWidget {
   final ToDo todo;
   final onToDoChanged;
   final onDeleteItem;
-  const ToDoItem(
-      {super.key,
-      required this.todo,
-      required this.onToDoChanged,
-      required this.onDeleteItem});
+  const ToDoItem({super.key, required this.todo, required this.onToDoChanged, required this.onDeleteItem});
 
   @override
   Widget build(BuildContext context) {
